@@ -1,0 +1,103 @@
+
+body{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(34,156,193,1) 62%, rgba(30,200,181,1) 84%, rgba(23,203,200,1) 88%, rgba(0,212,255,1) 100%);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.quiz_container{
+background-color: beige;
+width: 500px;
+height: 300px;
+overflow: hidden;
+display: none;
+align-items: center;
+flex-direction: column;
+justify-content: space-between;
+border-radius: 8px;
+}
+.quiz_container.active{
+    display: flex;
+}
+
+.quiz_header h4{
+    font-weight: bolder;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    margin: 10px 0;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    margin-right: 30px;
+    
+}
+ .quiz_container button{
+    background-color: aqua;
+    width: inherit;
+    height: 90px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.startBtn{
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.startBtn.hidden{
+    display: none; 
+}
+.startBtn:hover{
+    background: rgba(9,9,121,1) ;
+}
+
+.result_box{
+    background-color: white;
+    width: 290px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.result_box.active{
+    display: flex ;
+}
+.result_box p{
+    font-weight: 700;
+    padding: 10px;
+}
+.result_box button{
+    height: 37px;
+    width: inherit;
+    background: rgba(30,200,181,1);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+.result_box button:hover{
+    background-color: rgba(9,9,121,1);
+}
